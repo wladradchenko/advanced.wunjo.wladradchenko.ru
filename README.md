@@ -67,9 +67,9 @@ Wunjo AI - это приложение для синтеза речи из те�
 
 Почта: [i@wladradchenko.ru](i@wladradchenko.ru)
 
-Проект: [https://github.com/wladradchenko/voiceai.wladradchenko.ru](https://github.com/wladradchenko/voiceai.wladradchenko.ru)
+Проект: [https://github.com/wladradchenko/wunjo.wladradchenko.ru](https://github.com/wladradchenko/wunjo.wladradchenko.ru)
 
-Сайт приложения: [wladradchenko.ru/voice](https://wladradchenko.ru/voice)
+Сайт приложения: [wladradchenko.ru/wunjo](https://wladradchenko.ru/wunjo)
 
 
 <!-- CREDITS -->
