@@ -7,7 +7,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/wladradchenko/voiceai.wladradchenko.ru">
+  <a href="https://github.com/wladradchenko/wunjo.wladradchenko.ru">
     <img src="example/man.gif" alt="Logo" width="180" height="180">
   </a>
 
@@ -18,9 +18,9 @@
     <br/>
     <br/>
     <br/>
-    <a href="https://github.com/wladradchenko/voiceai.wladradchenko.ru/issues">Сообщить об ошибке</a>
+    <a href="https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru/issues">Сообщить об ошибке</a>
     ·
-    <a href="https://github.com/wladradchenko/voiceai.wladradchenko.ru/issues">Запросить функцию</a>
+    <a href="https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru/issues">Запросить функцию</a>
   </p>
 </div>
 
