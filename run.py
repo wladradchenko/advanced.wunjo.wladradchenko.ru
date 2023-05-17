@@ -14,8 +14,6 @@ def run(media_folder, extension_folder, app):
 	import os
 	import sys
 	import time
-	sys.path.insert(0, extension_folder)
-
 	import random
 	import torch
 	import yaml
@@ -24,10 +22,8 @@ def run(media_folder, extension_folder, app):
 	from time import gmtime, strftime
 	from flask_cors import cross_origin
 	from flask import request
-	from tacotron2.train import main as tacotron2
-	from waveglow.train import main as waveglow
+	from io import StringIO
 
-	sys.path.pop(0)
 
 	save_train_voice_folder = os.path.join(media_folder, 'user_trained_voice')
 	if not os.path.exists(save_train_voice_folder):
@@ -58,15 +54,61 @@ def run(media_folder, extension_folder, app):
 				return {"current_processor": 'cpu'}
 		return {"current_processor": current_processor}
 
-	# :TODO install modules
-	# :TODO if modules exist when this method add
+
+	# Create a StringIO object to capture the console output
+	console_stdout = StringIO()
+	console_stderr = StringIO()
+	sys.stdout = console_stdout  # prints
+	sys.stderr = console_stderr  # https
+
+	app.config["CONSOLE_LOG"] = []
+
+	@app.route('/console_log', methods=['GET'])
+	def console_log():
+    		# Retrieve the captured console output from the StringIO object
+    		captured_stdout = console_stdout.getvalue()
+    		captured_stderr = console_stderr.getvalue()
+
+    		# Split the captured output into individual log lines
+    		new_logs = captured_stdout.splitlines()  # + captured_stderr.splitlines()
+
+    		new_logs = [log for log in new_logs if "127.0.0.1" not in log and log != '']
+
+    		# Add new logs to the logs list
+    		app.config["CONSOLE_LOG"].extend(new_logs)
+
+		# Truncate the logs list if it exceeds the maximum limit
+    		max_logs = 100
+    		if len(app.config["CONSOLE_LOG"]) > max_logs:
+        		app.config["CONSOLE_LOG"] = app.config["CONSOLE_LOG"][-max_logs:]
+
+    		# Join the logs into a single string with line breaks
+    		logs_text = '\n'.join(app.config["CONSOLE_LOG"])
+
+    		app.config["CONSOLE_LOG"] = []
+
+    		return logs_text
+	
+	
 	@staticmethod
 	def tacotron2_train(hparams_path):
+		sys.path.insert(0, extension_folder)
+
+		from tacotron2.train import main as tacotron2
+
+		sys.path.pop(0)
+		
 		tacotron2(hparams_path=hparams_path)
 		return
 
 	@staticmethod
 	def waveglow_train(json_config):
+		sys.path.insert(0, extension_folder)
+
+		from waveglow.train import main as waveglow
+
+		sys.path.pop(0)
+		
 		waveglow(json_config=json_config)
 		return
 

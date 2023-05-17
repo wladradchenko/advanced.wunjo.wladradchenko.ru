@@ -44,11 +44,11 @@ import torch.distributed as dist
 from torch.utils.data.distributed import DistributedSampler
 from torch.utils.data import DataLoader
 
-from speech.tps.tps import Handler
 
 root_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, root_path)
 
+from speech.tps.tps import Handler
 from tacotron2.model import load_model
 from tacotron2.utils.data_utils import TextMelLoader, TextMelCollate, CustomSampler
 from tacotron2.utils.distributed import apply_gradient_allreduce
