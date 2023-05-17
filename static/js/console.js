@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         const buttonShownAnimationsSwitch = document.getElementById('button-show-animation-window');
 
         document.getElementById('table_speech_result').style.display = 'none';
-        document.getElementById('table_body_deepfake_result').style.display = 'none';
+        document.getElementById('table_deepfake_result').style.display = 'none';
 
         // Create the console log element
         var consoleLogElement = document.createElement('code');
