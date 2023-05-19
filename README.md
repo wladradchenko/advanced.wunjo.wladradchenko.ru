@@ -1,6 +1,6 @@
-[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru/blob/main/LICENSE)
-[![GitHub package version](https://img.shields.io/github/v/release/wladradchenko/extensions.wunjo.wladradchenko.ru?display_name=tag&sort=semver)](https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru)
-[![License: MIT v1.0](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru/blob/main/LICENSE)
+[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru/blob/main/LICENSE)
+[![GitHub package version](https://img.shields.io/github/v/release/wladradchenko/advanced.wunjo.wladradchenko.ru?display_name=tag&sort=semver)](https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru)
+[![License: MIT v1.0](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru/blob/main/LICENSE)
 
 <p align="right">(<a href="README_en.md">EN</a>)</p>
 <div id="top"></div>
@@ -18,7 +18,7 @@
     <br/>
     <br/>
     <br/>
-    <a href="https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru/issues">Сообщить об ошибке</a>
+    <a href="https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru/issues">Сообщить об ошибке</a>
     ·
     <a href="https://github.com/wladradchenko/voiceai.wladradchenko.ru/issues">Запросить функцию</a>
   </p>
