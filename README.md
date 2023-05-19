@@ -11,7 +11,8 @@
     <img src="example/man.gif" alt="Logo" width="180" height="180">
   </a>
 
-  <h3 align="center">Расширение Продвинутый Wunjo AI</h3>
+  <h3 align="center">Продвинутый Wunjo AI</h3>
+  <h4 align="center">Расширение</h4>
 
   <p align="center">
     Документация о проекте
