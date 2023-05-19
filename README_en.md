@@ -25,6 +25,17 @@
   </p>
 </div>
 
+<!-- ABOUT THE EXTENSIONS -->
+## About extension
+
+The extension adds to the main application:
+- Training panel of your own neural network model for voice synthesis
+- Ability to use GPU
+- Switching work from CPU to GPU and vice versa
+- Improved background quality when creating animations
+- Console to track learning progress and content generation
+
+Note: GPU extensions available if you have CUDA installed.
 
 <!-- ABOUT THE PROJECT -->
 ## About
@@ -47,8 +58,6 @@ All in all, this neural network desktop application is a handy and powerful tool
 ## Update 1.0.1
 
 - [x] Added console to track learning and synthesis progress.
-
-Note: GPU solutions available if you have CUDA installed.
 
 <!-- INSTALL -->
 ## Installation
