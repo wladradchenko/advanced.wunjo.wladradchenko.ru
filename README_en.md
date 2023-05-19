@@ -1,6 +1,6 @@
-[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru/blob/main/LICENSE)
-[![GitHub package version](https://img.shields.io/github/v/release/wladradchenko/extensions.wunjo.wladradchenko.ru?display_name=tag&sort=semver)](https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru)
-[![License: MIT v1.0](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/wladradchenko/extensions.wunjo.wladradchenko.ru/blob/main/LICENSE)
+[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru/blob/main/LICENSE)
+[![GitHub package version](https://img.shields.io/github/v/release/wladradchenko/advanced.wunjo.wladradchenko.ru?display_name=tag&sort=semver)](https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru)
+[![License: MIT v1.0](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru/blob/main/LICENSE)
 
 <p align="right">(<a href="README_en.md">RU</a>)</p>
 <div id="top"></div>
@@ -11,7 +11,7 @@
     <img src="example/robot.gif" alt="Logo" width="180" height="180">
   </a>
 
-  <h3 align="center">Extensions Wunjo AI</h3>
+  <h3 align="center">Extension Advanced Wunjo AI</h3>
 
   <p align="center">
     Project documentation
