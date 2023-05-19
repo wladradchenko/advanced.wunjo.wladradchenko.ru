@@ -11,7 +11,8 @@
     <img src="example/robot.gif" alt="Logo" width="180" height="180">
   </a>
 
-  <h3 align="center">Extension Advanced Wunjo AI</h3>
+  <h3 align="center">Advanced Wunjo AI</h3>
+  <h4 align="center">Extension</h4>
 
   <p align="center">
     Project documentation
