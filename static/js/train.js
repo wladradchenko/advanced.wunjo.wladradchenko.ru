@@ -20,10 +20,10 @@ function sendSpeechTrainParameters(param) {
     var valueDivTypeSpeechTrain;
     var configTypeSpeechTrain;
     if (toggleDivTypeSpeechTrain.classList.contains('active')) {
-        configTypeSpeechTrain = '/extensions/static/speech_train/static/config/tacotron2/hparams.yaml'
+        configTypeSpeechTrain = '/extensions/static/advanced/static/config/tacotron2/hparams.yaml'
         valueDivTypeSpeechTrain = "tacotron2";
     } else {
-        configTypeSpeechTrain = '/extensions/static/speech_train/static/config/waveglow/config.json'
+        configTypeSpeechTrain = '/extensions/static/advanced/static/config/waveglow/config.json'
         valueDivTypeSpeechTrain = "waveglow";
     };
 
