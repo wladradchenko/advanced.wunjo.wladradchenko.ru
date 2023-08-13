@@ -65,29 +65,29 @@ def run(media_folder, extension_folder, app):
 
 	@app.route('/console_log', methods=['GET'])
 	def console_log():
-    		# Retrieve the captured console output from the StringIO object
-    		captured_stdout = console_stdout.getvalue()
-    		captured_stderr = console_stderr.getvalue()
+		# Retrieve the captured console output from the StringIO object
+		captured_stdout = console_stdout.getvalue()
+		captured_stderr = console_stderr.getvalue()
 
-    		# Split the captured output into individual log lines
-    		new_logs = captured_stdout.splitlines()  # + captured_stderr.splitlines()
+		# Split the captured output into individual log lines
+		new_logs = captured_stdout.splitlines()  # + captured_stderr.splitlines()
 
-    		new_logs = [log for log in new_logs if "127.0.0.1" not in log and log != '']
+		new_logs = [log for log in new_logs if "127.0.0.1" not in log and log != '']
 
-    		# Add new logs to the logs list
-    		app.config["CONSOLE_LOG"].extend(new_logs)
+		# Add new logs to the logs list
+		app.config["CONSOLE_LOG"].extend(new_logs)
 
 		# Truncate the logs list if it exceeds the maximum limit
-    		max_logs = 100
-    		if len(app.config["CONSOLE_LOG"]) > max_logs:
-        		app.config["CONSOLE_LOG"] = app.config["CONSOLE_LOG"][-max_logs:]
+		max_logs = 100
+		if len(app.config["CONSOLE_LOG"]) > max_logs:
+			app.config["CONSOLE_LOG"] = app.config["CONSOLE_LOG"][-max_logs:]
 
-    		# Join the logs into a single string with line breaks
-    		logs_text = '\n'.join(app.config["CONSOLE_LOG"])
+		# Join the logs into a single string with line breaks
+		logs_text = '\n'.join(app.config["CONSOLE_LOG"])
 
-    		app.config["CONSOLE_LOG"] = []
+		app.config["CONSOLE_LOG"] = []
 
-    		return logs_text
+		return logs_text
 	
 	
 	@staticmethod
@@ -158,6 +158,23 @@ def run(media_folder, extension_folder, app):
 
 		with open(mark_file, "r", encoding="utf-8") as file:
 			mark_lines = file.readlines()
+			mark_line = mark_lines[0]
+			mark_vector = mark_line.split("|")
+
+			if len(mark_vector) != 2:
+				app.config['SYSNTHESIZE_STATUS'] = {
+					"status_code": 200,
+					"message": "Не верный формат разметки. Каждая строка данных должна быть в формате: аудио.wav|text from audio"
+				}
+				return {"status_code": 200}
+
+			if mark_vector[0].split(".")[-1] not in ["wav", "mp3"]:
+				app.config['SYSNTHESIZE_STATUS'] = {
+					"status_code": 200,
+					"message": "Аудио файл не является .wav или .mp3. Каждая строка данных должна быть в формате: аудио.wav|text from audio"
+				}
+				return {"status_code": 200}
+
 		random.shuffle(mark_lines)  # random shuffle list
 
 		len_mark_lines = len(mark_lines)
