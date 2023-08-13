@@ -59,6 +59,11 @@ All in all, this neural network desktop application is a handy and powerful tool
 
 - [x] Added console to track learning and synthesis progress.
 
+## Update 1.0.2
+
+- [] Add inspect right format of mark file.
+- [] Change ru and en on icon.
+
 <!-- INSTALL -->
 ## Installation
 
