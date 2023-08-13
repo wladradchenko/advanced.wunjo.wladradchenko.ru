@@ -195,7 +195,8 @@ def run(media_folder, extension_folder, app):
 		# start train
 		try:
 			tacotron2_train(hparams_path=new_yaml_file_path)
-		except:
+		except Exception as e:
+			print(e)
 			app.config['SYSNTHESIZE_STATUS'] = {"status_code": 200, "message": "Недостаточно памяти графического процессора. Увеличьте размер памяти"}
 			return {"status_code": 400}
 
@@ -270,7 +271,8 @@ def run(media_folder, extension_folder, app):
 		# start train
 		try:
 			waveglow_train(json_config=new_json_file_path)
-		except:
+		except Exception as e:
+			print(e)
 			app.config['SYSNTHESIZE_STATUS'] = {"status_code": 200, "message": "Недостаточно памяти графического процессора. Увеличьте размер памяти"}
 			return {"status_code": 400}
 
