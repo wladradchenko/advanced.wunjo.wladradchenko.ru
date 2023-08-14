@@ -62,7 +62,7 @@ All in all, this neural network desktop application is a handy and powerful tool
 ## Update 1.0.2
 
 - [x] Add inspect right format of mark file.
-- [x] Change ru and en on icon.
+- [ ] Change ru and en on icon.
 
 <!-- INSTALL -->
 ## Installation
