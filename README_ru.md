@@ -2,7 +2,7 @@
 [![GitHub package version](https://img.shields.io/github/v/release/wladradchenko/advanced.wunjo.wladradchenko.ru?display_name=tag&sort=semver)](https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru)
 [![License: MIT v1.0](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/wladradchenko/advanced.wunjo.wladradchenko.ru/blob/main/LICENSE)
 
-<p align="right">(<a href="README_en.md">EN</a>)</p>
+<p align="right">(<a href="README.md">EN</a>)</p>
 <div id="top"></div>
 
 <br />
@@ -59,6 +59,11 @@ Wunjo AI - это приложение для синтеза речи из те�
 
 - [x] Добавлена консоль для отслеживания процесса обучения и синтеза.
 
+## Обновление 1.0.2
+
+- [x] Добавить проверить правильный формат файла метки.
+- [ ] Сменить ru и en на иконке.
+      
 <!-- INSTALL -->
 ## Установка
 
