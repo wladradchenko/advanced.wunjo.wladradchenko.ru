@@ -78,6 +78,17 @@ To add new elements to the front of the project, you need to create a templates/
 
 An example of creating an extension structure in this project.
 
+## Train data format
+Audio has to be in .wav format 22050 Hz and 352Kbts. Example for marks:
+
+```
+006522.wav|Н+е к Пл+юхиной ж+е обращ+аться, сказ+ал ред+актор. В+от он+о, д+умаю, тво+ё подсозн+ание. Сд+елайте, гол+убчик.
+006523.wav|В см+ысле заш+ить? Н+а ск+орую р+уку. Вообщ+е‑т+о я н+е ум+ею… Д+а к+ак сум+еете. Кор+оче, заш+ил я ем+у бр+юки.
+006524.wav|Чег+о +уж т+ам… Заглян+ул в лаборат+орию к Жбанк+ову. Собир+айся, говор+ю, пошл+и.
+```
+
+Where + is the stress in the word.
+
 <!-- VIDEO -->
 ## Video
 
