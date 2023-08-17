@@ -87,7 +87,9 @@ Audio has to be in .wav format 22050 Hz and 352Kbts. Example for marks:
 006524.wav|Чег+о +уж т+ам… Заглян+ул в лаборат+орию к Жбанк+ову. Собир+айся, говор+ю, пошл+и.
 ```
 
-Where + is the stress in the word.
+Where + is the stress in the word. 
+
+P.S. Even if your custom dataset is smaller in terms of total number of files, individual sequences could be longer. Tacotron2's memory consumption largely depends on the sequence lengths due to the recurrent nature of the model. Ensure that sequences in your custom dataset aren't too long or consider truncating or splitting them. If you still have an error CUDA out of memory, then you can increase batch size to 16 in hparams.yaml
 
 <!-- VIDEO -->
 ## Video
