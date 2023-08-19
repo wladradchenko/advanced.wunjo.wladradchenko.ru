@@ -79,7 +79,7 @@ To add new elements to the front of the project, you need to create a templates/
 An example of creating an extension structure in this project.
 
 ## Train data format
-Audio has to be in .wav format 22050 Hz and 352Kbts. Example for marks:
+Audio has to be in .wav format Mono channels, sample rate 22050 Hz and bit rate 352Kbts. Example for marks:
 
 ```
 006522.wav|Н+е к Пл+юхиной ж+е обращ+аться, сказ+ал ред+актор. В+от он+о, д+умаю, тво+ё подсозн+ание. Сд+елайте, гол+убчик.
