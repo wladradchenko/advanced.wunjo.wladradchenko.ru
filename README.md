@@ -25,6 +25,8 @@
   </p>
 </div>
 
+>  Deprecated: Starting from version 1.4, the use of extensions in Wunjo AI is deprecated.
+
 <!-- ABOUT THE EXTENSIONS -->
 ## About extension
 
